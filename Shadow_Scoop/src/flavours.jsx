@@ -1,67 +1,13 @@
+import caramel from "./assets/caramel flavour.png";
 import image1 from "./assets/image2.png";
-import { FaLongArrowAltRight } from "react-icons/fa";
-import "./css folder/home.css";
-import Shop from "./shop";
-import strawberry from "./assets/strawberry flavour.png"
-import mango from "./assets/mango flavour.png"
-import vanilla from "./assets/vanilla flavour.png"
-import caramel from "./assets/caramel flavour.png"
+import mango from "./assets/mango flavour.png";
+import strawberry from "./assets/strawberry flavour.png";
+import vanilla from "./assets/vanilla flavour.png";
 
-export function Home() {
-  return (
-    <>
-      <div className="home-container">
-        <div className="home-content">
-          <p>FUEL THE GRIND OWN THE SHADOW</p>
-
-          <h1>
-            SHADOW <br />
-            <span>SCOOP</span>
-          </h1>
-
-          <p>
-            PREMIUM WHEY PROTEIN <br />
-            BUILD FOR RESULTS
-          </p>
-
-          <div className="protein-stats">
-            <span>
-              25G <br />
-              PROTEIN
-            </span>
-
-            <span>
-              5.5G <br />
-              BCAAs
-            </span>
-
-            <span>
-              ZERO <br />
-              ADDED SUGAR
-            </span>
-          </div>
-
-          <div className="home-buttons">
-            <button className="shop-btn">
-              SHOP NOW <FaLongArrowAltRight />
-            </button>
-
-            <button className="learn-btn">
-              LEARN MORE
-            </button>
-          </div>
-        </div>
-
-        <img
-          src={image1}
-          alt=""
-          width="600px"
-          height="400px"
-        />
-      </div>
-      <h1 style={{textAlign:"center",backgroundColor:"white",color:'black',marginLeft:"40%",marginRight:"40%",borderRadius:"20px",border:"2px solid black",boxShadow:"1px 1px 5px white"}}>-:Top Flavours:-</h1>
-
-      <div style={{display:"flex",gap:"10px",flexWrap:"wrap",justifyContent:"center"}}>
+function Flavours(){
+    return(
+        <>
+         <div style={{display:"flex",gap:"10px",flexWrap:"wrap",justifyContent:"center"}}>
         <div style={{textAlign:"center",border:"2px solid white",boxShadow:"1px 1px 5px ",borderRadius:"30px"}}>
         <img src={image1} alt="" width={"160px"} />
         <h5>Chocolate Flavour</h5>
@@ -122,6 +68,7 @@ export function Home() {
         <button style={{borderRadius:"5px",backgroundColor:"black",color:"white",cursor:'pointer'}}>Buy now</button>
         </div>
       </div>
-    </>
-  );
+        </>
+    )
 }
+export default Flavours

@@ -1,0 +1,44 @@
+.home-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.home-content h1 {
+  font-size: 50px;
+  margin-top: 0;
+}
+
+.home-content h1 span {
+  margin-top: 0;
+  color: orange;
+}
+
+.protein-stats {
+  display: flex;
+  gap: 15px;
+}
+
+.home-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.shop-btn {
+  color: white;
+  background-color: orange;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.learn-btn {
+  color: white;
+  background-color: black;
+  border: 2px solid orange;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px;
+
+}
+
